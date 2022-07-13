@@ -109,7 +109,7 @@ nav ul li {
 }
 .menu-toggle:after {
   opacity: 0;
-  content: url("/media/close.png");
+  content: url("../media/close.png");
   color: white;
   position: absolute;
   top: 5vh;
@@ -472,7 +472,7 @@ align-items: center;
 }
 /* ----Contact Line ---  */
 .contactLine{
-    background: url('/media/cntct.png');
+    background: url('../media/cntct.png');
     background-size: 100%;
     height: 35vh;
     display: flex;
