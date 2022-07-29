@@ -91,6 +91,7 @@ nav ul li {
   height: 30px;
   outline: none;
   transition: opacity 0.2s ease-out;
+  display: none !important;
 }
 .menu-toggle:before {
   content: "";
@@ -329,6 +330,7 @@ letter-spacing: 3px;
 .landing h3{font-size: 18px;
 font-weight: 400;
 opacity: 0.7;
+display: none;
 }
 .world{overflow: hidden;margin: 0 20vw;display: flex;justify-content: center;align-items: center;padding-bottom: 10vh;}
 .world img{width: 100%;}
@@ -350,7 +352,8 @@ opacity: 0.7;
     margin: 5vh 16vw;
 }
 .block{
-
+    border-radius: 12px ;
+    box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.071);
     padding: 14px;
     max-width: 325px;
     margin: 0 1vw;
@@ -404,7 +407,7 @@ opacity: 0.7;
 .clients{
     height: 30vh;
     background-color: #F7F0EC;
-    display: flex;
+    display: none !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -436,7 +439,8 @@ align-items: center;
     align-items: flex-start;
     align-content: flex-start;
     width: 86vw;
-    margin: 10vh 7vw;
+    margin: 15vh 7vw;
+    margin-top: 20vh;
     overflow: auto;
     flex-direction: row;
 }
@@ -446,7 +450,9 @@ align-items: center;
     height: 350px;
     margin: 10px;
     padding: 10px;
-    background-color: rgb(0, 0, 0);
+    /* background-color: #07132D; */
+    border: 4px solid #07132D;
+    color: #07132D;
     border-radius: 23px;
     text-align: center;
 }
@@ -467,8 +473,7 @@ align-items: center;
     line-height: 135%;
     letter-spacing: 1px;
     font-size: 14px;
-    color: #FEE9DE;
-    opacity: 0.9;
+    color: #07132D;
 }
 /* ----Contact Line ---  */
 .contactLine{
@@ -535,7 +540,7 @@ align-items: center;
 /* -----Footer---- */
 footer{
     height: 30vh;
-    background: #004869;
+    background: #183354;
 }
 footer .logo{
     width: 250px;
