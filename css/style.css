@@ -358,7 +358,7 @@ display: none;
     max-width: 325px;
     margin: 0 1vw;
     height: 500px;
-    border: 5px solid var(--blu);
+    /* border: 5px solid var(--blu); */
 }
 .block img{
     margin-top: 20px  !important;
