@@ -1,0 +1,150 @@
+.banner{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url('/media/abstract.webp');
+    background-size: 100%;
+    height: 50vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner h1{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.blogCards {
+    display: grid;
+    grid-template-columns: repeat(3, 21vw);
+    grid-template-rows: repeat(2, 40vh); /* Each new row you have to increase the value on the left */
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    margin: 15vh 16.5vw;
+}
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 2 / 1 / 3 / 2; }
+.div5 { grid-area: 2 / 2 / 3 / 3; }
+.div6 { grid-area: 2 / 3 / 3 / 4; }
+.div7 { grid-area: 3 / 1 / 4 / 2; }
+.div8 { grid-area: 3 / 2 / 4 / 3; }
+.div9 { grid-area: 3 / 3 / 4 / 4; }
+
+.blogCard img{
+    background-color: #002c40;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.blogCard{
+    border-radius: 16px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.176);
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: black;
+    overflow: hidden;
+    transition: 0.1s ease-in-out;
+}
+.blogCard:hover{box-shadow: none;border: 3px solid #00AFFF;}
+.blogCard h2{
+    font-size: 20px;
+    margin: 6px 0 3px 0;
+}
+.blogCard p{
+    margin-top: 0;
+    font-size: 12px;
+}
+.more{
+    margin-bottom: 4px;
+    border: 2px solid #00AFFF;
+    background-color: #00AFFF;
+    color: white;
+    padding: 4px 20px;
+    border-radius: 40px;
+    float: right;
+    /* align-self: flex-end; */
+    transition: 0.3s ease-in-out;
+}
+.more:hover{
+    background-color: transparent;
+    color: #00AFFF;
+}
+
+/* -------  About Page  -------- */
+.aboutHeader{
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 500;
+}
+.aboutText{
+    text-align: center;
+    width: 50vw;
+    margin: 5vh 25vw 15vh 25vw;
+    font-size: 18px;
+    line-height: 150%;
+}
+/* -------  About Page  -------- */
+.jobsHeader{
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 500;
+}
+.jobsText{
+    text-align: center;
+    width: 50vw;
+    margin: 5vh 25vw 4vh 25vw;
+    font-size: 18px;
+    line-height: 150%;
+}
+.applyBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15vh;
+}
+.applyJobs{
+    font-size: 20px;
+    text-align: center;
+    padding: 8px 30px;
+    border: 3px solid #00AFFF;
+    color: #00AFFF;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+}
+.applyJobs:hover{
+    background-color: #00AFFF;
+    color: white;
+}
+
+/* Mobile */
+@media only screen and (max-width:900px){
+    .blogCards {
+        display: grid;
+        grid-template-columns: repeat(1, 90vw);
+        grid-template-rows: repeat(2, auto); /* Each new row you have to increase the value on the left */
+        grid-column-gap: 0vw;
+        grid-row-gap: 2vw;
+        margin: 15vh 4vw;
+    }
+    .blogCard img{
+        height: 160px;
+    }
+    .div1 { grid-area: auto / auto / auto / auto; }
+    .div2 { grid-area: auto / auto / auto / auto; }
+    .div3 { grid-area: auto / auto / auto / auto; }
+    .div4 { grid-area: auto / auto / auto / auto; }
+    .div5 { grid-area: auto / auto / auto / auto; }
+    .div6 { grid-area: auto / auto / auto / auto; }
+    .div7 { grid-area: auto / auto / auto / auto; }
+    .div8 { grid-area: auto / auto / auto / auto; }
+    .div9 { grid-area: auto / auto / auto / auto; }
+}
